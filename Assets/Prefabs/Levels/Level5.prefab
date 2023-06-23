@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7392624911247596078
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7392624911247596076}
+  - component: {fileID: 7392624911247596077}
+  m_Layer: 0
+  m_Name: Level5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7392624911247596076
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7392624911247596078}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7392624911247596077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7392624911247596078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af5160b842795d548aa3994ce065f171, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blockDatas:
+  - blockType: 1
+    spawnProbability: 5
+    health: 3000
+    neighboursToKillAmount: 4
+  - blockType: 2
+    spawnProbability: 5
+    health: 2500
+    neighboursToKillAmount: 4
+  - blockType: 3
+    spawnProbability: 10
+    health: 3250
+    neighboursToKillAmount: 8
+  - blockType: 0
+    spawnProbability: 100
+    health: 1500
+    neighboursToKillAmount: 0
+  gridSize: {x: 5, y: 5}
+  spacing: {x: 1.1, y: 1.1}
+  startingPosition: {x: -2.25, y: 3}
+  levelPrefab: {fileID: 1168672682311168556, guid: 3183e01feae64694fad8d50f7a9dbb27, type: 3}
+  blockPrefab: {fileID: 3273821111349468502, guid: c777d7d920226cf4da84604980ff1182, type: 3}
+  levelScript: {fileID: 0}
